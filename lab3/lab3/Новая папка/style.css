@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 482px;
+	height: 482px;
+	border: 1px solid black;
+	margin: 20px auto;
+	background: grey;
+	display: flex;
+}
+
+.c{
+	width: 60px;
+	height:60px;
+
+}
+
+.w{
+	background: white
+}
+
+
+.b{
+	background: black
+}

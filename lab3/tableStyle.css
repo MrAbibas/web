@@ -1,0 +1,7 @@
+td:hover{
+	background-color: grey;
+	transition: 1s;
+}
+td:active{
+	background-color: red;
+}
