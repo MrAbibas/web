@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/less">
+*{
+  margin:2%;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+.red{
+    background: red;
+}
+
+.bg (@bg){
+  background:@bg;
+}
+
+.h (@height){
+  height: @height
+}
+
+.w (@width){
+  width: @width;
+}
+
+@media screen and (min-width: 800px){
+
+.container{
+  .w(80%);
+  .red;
+  margin:0 auto;
+}
+
+.header{
+  .bg(green);
+  .h(60px);
+}
+
+.aside{
+  .w(52%);
+  .h(300px);
+  .bg(yellow);
+  float:left;
+}
+
+.artikle{
+  .w(40%);
+  .h(300px);
+  .bg(grey);
+  float:right;
+}
+
+.footer{
+  .bg(green);
+  .h(50px);
+  clear:left;
+}
+
+}
+
+@media screen and (max-width: 800px){
+
+.container{
+  .w(100%);
+  .red;
+  margin:0 auto;
+}
+
+.header{
+  .bg(green);
+  .h(60px);
+}
+
+.aside{
+  .w(96%);
+  .h(300px);
+  .bg(yellow);
+}
+
+.artikle{
+  .w(96%);
+  .h(300px);
+  .bg(grey);
+}
+
+.footer{
+  .bg(green);
+  .h(50px);
+}
+
+}
+</style>
+<script src="less.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus delectus voluptates </p>
+    </div>
+    <div class="aside">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus delectus voluptates voluptatum in suscipit, rem, laudantium illo impedit omnis dolorem nam at atque magni sapiente distinctio odit architecto doloribus recusandae.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus delectus voluptates voluptatum in suscipit, rem, laudantium illo impedit omnis dolorem nam at atque magni sapiente distinctio odit architecto doloribus recusandae.</p>
+    </div>
+    <div class="artikle">
+      <ul>
+        <li>
+          <p>Lorem, ipsum, dolor.</p>
+        </li>
+        <li>
+          <p>Vero, neque, ipsam.</p>
+        </li>
+        <li>
+          <p>Error, temporibus, iste?</p>
+        </li>
+        <li>
+          <p>Quisquam, illum, odio?</p>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus delectus voluptates</p>
+    </div>
+  </div>
+</body>
+</html>
